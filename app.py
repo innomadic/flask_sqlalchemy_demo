@@ -3,8 +3,6 @@ from flask_sqlalchemy import SQLAlchemy
 import os 
 app = Flask(__name__)
 
-
-
 basedir = os.path.abspath(os.path.dirname(__file__))
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'app.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -16,4 +14,4 @@ class User(db.Model):
     email = db.Column(db.String(120), unique=True, nullable=False)
 
     def __repr__(self):
-        return f'<User self.username>'
+        return f'<User {self.username}>'
