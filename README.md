@@ -15,3 +15,8 @@ db.session.add(user1)
 db.session.commit()
 User.query.all()
 ```
+
+# References
+
+* [Flask-SQLAlchemy Documentation](https://flask-sqlalchemy.palletsprojects.com/en/2.x/quickstart/)
+* [Michael Grinberg Flask Mega Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database)
